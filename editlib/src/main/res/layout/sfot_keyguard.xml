@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    <!--<GridView-->
+        <!--android:id="@+id/bide_keybord_grid"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:divider="@null"-->
+        <!--android:numColumns="3"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_alignParentStart="true"/>-->
+    <edit.input.bide.com.commoneditext.horizontal.HorizontalListView
+        android:id="@+id/data_list"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginTop="2dp"
+        android:layout_height="60dip" />
+    <edit.input.bide.com.commoneditext.horizontal.HorizontalListView
+        android:id="@+id/char_list"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginTop="65dip"
+        android:layout_height="60dip" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dip"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/switch_panel"
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:layout_height="50dip"
+            android:layout_marginLeft="6dip"
+            android:background="@drawable/wifipw_btn_refresh"/>
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/wifipw_btn_del"/>
+        <ImageButton
+            android:id="@+id/ok"
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/wifipw_btn_ok"/>
+    </LinearLayout>
+
+</RelativeLayout>
